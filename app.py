@@ -49,20 +49,8 @@ if st.button('Recommend'):
         st.error("Both 'names' and 'posters' lists must have at least five elements.")
 
 
-from flask import Flask
 
-app = Flask(__name__)
 
-# Define your routes here
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-# More route definitions can be added here
-
-# Make sure this part is at the end of the file
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
 
 
 
